@@ -21,3 +21,11 @@
 //     opacity:0,
 //     scale:0
 // })
+
+gsap.to("#page1 #navbar", {
+  scollTrigger: {
+    trigger: "#page1 #navbar",
+    scroller: "body",
+    markers: true,
+  },
+});
