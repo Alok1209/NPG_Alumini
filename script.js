@@ -6,23 +6,27 @@ tl.from("#navbar", {
   y: -100,
   duration: 0.8,
   delay: 0.5,
+  opacity:0
 });
 
 tl.from("#navbar-content h4", {
   y: -100,
-  duration: 0.5,
-  delay: 0.2,
+  duration: 0.8,
+  // delay: 0.2,
   stagger: 0.2,
+  opacity:0
 });
 tl.from("#content h1",{
     x:-1200,
-    duration:0.5,
-    delay:0.1
+    duration:0.8,
+    // delay:0.1,
+    opacity:0
 })
 tl.from("#content h2",{
     x:-1000,
-    duration:0.5,
-    delay:0.1
+    duration:0.8,
+    // delay:0.1,
+    opacity:0
 })
 gsap.to("#page1 #navbar", {
   backgroundColor: "white",
@@ -49,16 +53,16 @@ gsap.to("#page1 #navbar #navbar-content h4", {
   },
 });
 
-navContent.addEventListener("mouseover", function () {
-  gsap.from("#navbar-content span", {
-    y:-50,
-    duration: 0.5,
-  });
-  gsap.to("#navbar-content span",{
-    y:0,
-    duration:0.5
-  })
-});
+// navContent.addEventListener("mouseover", function () {
+//   gsap.from("#navbar-content span", {
+//     y:-50,
+//     duration: 0.5,
+//   });
+//   gsap.to("#navbar-content span",{
+//     y:0,
+//     duration:0.5
+//   })
+// });
 
 
 
