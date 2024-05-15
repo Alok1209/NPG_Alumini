@@ -6,7 +6,7 @@ var navContenth4 = document.querySelector("#navbar-content h4");
 tl.from("#content h1", {
   // x: -700,
   // y: 300,
-  duration: 2,
+  duration: 1,
   delay: 1,
   // opacity: 0,
   scale: 0,
@@ -41,7 +41,7 @@ gsap.to("#page1 #navbar", {
     trigger: "#page1 #navbar",
     scroller: "body",
     start: "top -50%",
-    end: "top 80%",
+    end: "max",
     // markers: true,
     scrub: true,
   },
