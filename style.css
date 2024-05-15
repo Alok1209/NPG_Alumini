@@ -269,10 +269,11 @@ body {
 }
 #about_college_content {
   width: 40em;
-  height: 30em;
+  height: 35em;
+  padding: 30px;
 
   -webkit-text-size-adjust: 100%;
-  /* border: 1px solid black; */
+  /* border: 1px solid black;  */
 }
 #about_college_content h2 {
   width: 100%;
