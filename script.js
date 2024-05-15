@@ -34,14 +34,15 @@ tl.from("#content h2", {
   scale: 0,
 });
 gsap.to("#page1 #navbar", {
-  backgroundColor: "white",
+  backgroundColor: "#FFFFF0",
+  boxShadow:"5px 0.5px 4px 0px #a5a5a5",
   // backdropFilter: blur(0),
   // document.getElementById("#navbar-content h1").color="white",
   scrollTrigger: {
     trigger: "#page1 #navbar",
     scroller: "body",
-    start: "top -50%",
-    end: "top 80%",
+    start: "top -100%",
+    end: "max",
     // markers: true,
     scrub: true,
   },
@@ -52,7 +53,7 @@ gsap.to("#page1 #navbar #navbar-content h4", {
   scrollTrigger: {
     trigger: "#page1 #navbar #navbar-content h4",
     scroller: "body",
-    start: "top -50%",
+    start: "top -100%",
     end: "max",
     scrub: true,
   },
