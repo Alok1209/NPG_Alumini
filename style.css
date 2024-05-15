@@ -138,12 +138,15 @@ body {
   /* backdrop-filter: blur(10px); */
 }
 #navbar {
+  /* background-color: white; */
   display: flex;
   align-items: center;
   height: 5em;
   padding: 20px 20px;
   backdrop-filter: blur(4px);
   z-index: 5;
+  position: fixed;
+  width: 100%;
 }
 
 #logo img {
@@ -158,10 +161,23 @@ body {
   gap: 40px;
   color: white;
 }
-#navbar-content h3 {
-  font-size: 20px;
-  font-weight: 500;
+#navbar-content h4 {
+  /* font-size: 20px; */
+  font-weight: 400;
   cursor: pointer;
+  /* overflow: hidden; */
+  background-color: red;
+
+  /* height: 5em; */
+}
+#navbar-content span {
+  /* overflow: hidden; */
+  background-color: royalblue;
+  width: 5em;
+  height: 2em;
+  padding: 5px;
+  text-align: center;
+  align-content: center;
 }
 #page2 {
   height: 100%;
@@ -197,6 +213,10 @@ body {
   text-shadow: 10px;
 }
 #content h2 {
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: white;
+  font-family: kaftan;
+  text-shadow: 10px;
 }
