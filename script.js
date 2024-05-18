@@ -6,14 +6,15 @@ var navContenth4 = document.querySelector("#navbar-content h4");
 tl.from("#content h1", {
   // x: -700,
   // y: 300,
-  duration: 1,
+  duration: 1.5,
   delay: 1,
   // opacity: 0,
-  scale: 0,
+  // scale: 0,
+  y: 1000,
 });
 tl.from("#navbar", {
   y: -100,
-  duration: 0.8,
+  duration: 0.6,
   delay: 0.5,
   opacity: 0,
 });
@@ -122,4 +123,19 @@ function splitTextAnimation() {
   });
 }
 splitTextAnimation();
+
+var joinNowButton = document.querySelector("#cta section a ");
+console.log(joinNowButton);
+joinNowButton.addEventListener("click", () => {
+  console.log("clicked");
+  gsap.to("#googleform", {
+    scale: 1,
+  });
+});
+var formclose = document.querySelector("#googleform");
+formclose.addEventListener("click", () => {
+  gsap.to("#googleform", {
+    scale: 0,
+  });
+});
 // navContent.addEventListener("mouseleave", () => {});
