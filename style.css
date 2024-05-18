@@ -219,10 +219,11 @@ body {
   text-shadow: 10px;
 }
 #page2-part1 {
-  width: 55%;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
+  /* border: 2px solid black; */
 }
 #page2-part1 img {
   position: absolute;
@@ -251,16 +252,18 @@ body {
   width: 45%;
   height: 70%;
   padding: 20px;
+  /* border: 2px solid black; */
 }
 #page2-part2 h1 {
   text-align: center;
 }
 #page2-part2 p {
+  padding: 20px 30px;
   text-align: justify;
 }
 #page3 {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   /* border: 2px solid black; */
   display: flex;
   align-items: center;
@@ -297,4 +300,264 @@ body {
   border-radius: 5px 25px 5px 25px;
   z-index: 2;
   /* box-shadow: 4px 1px 9px 2px #ebebeb; */
+}
+#page_CTA {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#cta {
+  width: 60%;
+  height: 60%;
+  /* border: 2px solid black; */
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+#cta section {
+  width: fit-content;
+  margin: auto;
+  /* border: 2px solid pink; */
+}
+#cta section h4 {
+  font-size: 4.3rem;
+  white-space: nowrap;
+}
+#cta section h2 {
+  font-size: x-large;
+  font-weight: 600;
+  padding: 10px;
+}
+#cta section p {
+  font-size: large;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+}
+.cta-button {
+  display: inline-block;
+  background-color: #296860;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-decoration: none;
+  /* transition: background-color 0.3s ease; */
+}
+#googleform {
+  top: 0%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  min-height: 90vh;
+  padding: 10px;
+  background-color: #fffff0;
+  box-shadow: 0px 1px 8px 0px rgb(0, 0, 0, 0.3);
+  scale: 0;
+  z-index: 2;
+}
+#googleform i {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: x-large;
+  cursor: pointer;
+}
+#page_CTA iframe {
+  width: 60vw;
+  min-height: 90vh;
+  padding: 10px;
+
+  /* border: 2px solid black; */
+}
+
+#footer {
+  width: 100%;
+  height: 80%;
+  background-color: #296860;
+  color: white;
+  display: flex;
+}
+#footer-content {
+  width: 85%;
+  height: 90%;
+  /* border: 2px solid white; */
+  margin: auto;
+}
+.footer-top {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  width: 30%;
+  /* border: 2px solid white; */
+}
+.footer-right {
+  width: 25%;
+  /* border: 2px solid white; */
+}
+
+.footer-widget-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  font-size: large;
+}
+.footer-widget {
+  padding: 2rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  /* letter-spacing: 0.1rem; */
+}
+
+.footer-widget .list-links {
+  padding: 0 0 0 15px;
+  margin: 0;
+}
+.footer-widget .list-links a {
+  /* list-style-type: square; */
+  /* line-height: 24px; */
+  text-decoration: none;
+  color: #f0efef;
+}
+#contact {
+  padding: 2rem;
+}
+#contact p {
+  font-size: 1rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+#social {
+  width: 100%;
+  height: 30%;
+  /* border: 2px solid rgb(212, 23, 23); */
+  padding: 2rem;
+}
+.social-logo {
+  width: 3rem;
+  height: 3rem;
+  /* border: 2px solid; */
+  border-radius: 50%;
+  background-size: cover;
+}
+#logo-container {
+  display: flex;
+  gap: 1rem;
+}
+
+#facebook {
+  background-image: url(facebook.jpg);
+}
+#instagram {
+  background-image: url(instagram.jpeg);
+}
+#linkedin {
+  background-image: url(LinkedIn.jpg);
+}
+#page_events {
+  width: 100%;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+:root {
+  --cards: 4;
+  --cardHeight: 70vh;
+  --cardTopPadding: 1.5rem;
+  --cardMargin: 4vw;
+}
+.container {
+  width: 85%;
+  margin: auto;
+
+  /* border: 2px solid; */
+}
+.container h2 {
+  font-size: 4rem;
+  /* text-align: center; */
+  position: sticky;
+  top: 8%;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+#cards {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--cards), var(--cardsHeight));
+  gap: var(--cardMargin);
+  padding-bottom: calc(var(--cards)+var(--cardPadding));
+  margin-bottom: var(--cardMargin);
+}
+#card1 {
+  --index: 1;
+}
+#card2 {
+  --index: 2;
+}
+#card3 {
+  --index: 3;
+}
+#card4 {
+  --index: 4;
+}
+.card {
+  position: sticky;
+  top: 20%;
+  padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+.card-body {
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: 0px 1px 8px 0px rgb(0, 0, 0, 0.3);
+  height: var(--cardHeight);
+  background-color: #fffff0;
+}
+.card-body-container {
+  /* border: 2px solid black; */
+  border-radius: 40px;
+  height: 100%;
+  display: flex;
+}
+.card-body-container div:nth-child(1) {
+  width: 50%;
+  height: 100%;
+  border-radius: 35px 20px 20px 35px;
+  background-color: #296860;
+  background-size: cover;
+}
+.card-body-container div:nth-child(2) {
+  width: 50%;
+  height: 100%;
+  border-radius: 5px 35px 35px 5px;
+  padding: 0px 45px;
+  font-size: 1.05rem;
+  word-spacing: 0.5rem;
+  line-height: 1.8rem;
+  z-index: inherit;
+}
+.card-body-container p:nth-child(1) {
+  padding: 20px 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+#card1 .card-body-container div:nth-child(1) {
+  background-image: url(holi_of_flowers1.jpg);
 }
