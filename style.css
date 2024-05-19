@@ -907,14 +907,20 @@ body {
   display: flex !important;
   flex-direction: row !important;
   gap: 2rem;
-  
 }
 .ttcd1{
-  width: 50rem;
+  width: 15rem;
   height: 100%;
   border: 1px solid black;
   border-radius: 1rem;
+  background-image: url('./top-alumni.jpg');
+  background-size: cover;
+  background-position: center;
 }
+.ttcd2{
+  width: 50%;
+}
+
 
 
 
@@ -985,6 +991,16 @@ body {
 }
 
 
+
+.event_img2{
+  background-image: url('./Gallery/img2.jpg');
+}
+.event_img3{
+  background-image: url('./Gallery/img3.jpg');
+}
+.event_img4{
+  background-image: url('./Gallery/rangoli_comp.jpg');
+}
 
 
 
