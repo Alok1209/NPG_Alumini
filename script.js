@@ -43,7 +43,7 @@ gsap.to("#navbar", {
     scroller: "body",
     start: 130,
     end: "top -100%",
-    markers: true,
+    markers: false,
     scrub: true,
   },
 });
@@ -79,15 +79,16 @@ navContent.forEach((el) => {
 function logo_transition() {
   var t = gsap.timeline();
   var logo = document.querySelector("#navbar img");
+  var logo_div = document.querySelector("#logo");
   t.to(logo, {
     scale: 1.1,
     rotateY: 360,
   });
   t.pause();
-  logo.addEventListener("mouseenter", () => {
+  logo_div.addEventListener("mouseenter", () => {
     t.play();
   });
-  logo.addEventListener("mouseleave", () => {
+  logo_div.addEventListener("mouseleave", () => {
     t.reverse();
   });
 }
