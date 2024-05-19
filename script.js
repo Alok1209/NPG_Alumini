@@ -11,6 +11,7 @@ tl.from("#content h1", {
   // scale: 0,
   y: 1000,
 });
+
 tl.from("#navbar", {
   y: -100,
   duration: 0.6,
@@ -33,6 +34,7 @@ tl.from("#content h2", {
   opacity: 0,
   scale: 0,
 });
+
 tl.to("#notice", {
   duration: 0.5,
   left: 0,
@@ -43,6 +45,7 @@ noticeclose.addEventListener("click", () => {
     left: "-80%",
   });
 });
+
 gsap.to("#navbar", {
   backgroundColor: "#FFFFF0",
   boxShadow: "5px 0.5px 4px 0px #a5a5a5",
