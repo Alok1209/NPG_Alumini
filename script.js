@@ -1,8 +1,7 @@
 var tl = gsap.timeline();
 var nav = document.getElementById("#navbar");
 var navContent = document.querySelectorAll("#navbar-content span");
-var navContenth4 = document.querySelector("#navbar-content h4");
-// console.log(navContenth4);
+var navContenta = document.querySelector("#navbar-content a");
 tl.from("#content h1", {
   // x: -700,
   // y: 300,
@@ -34,34 +33,34 @@ tl.from("#content h2", {
   opacity: 0,
   scale: 0,
 });
-gsap.to("#page1 #navbar", {
+gsap.to("#navbar", {
   backgroundColor: "#FFFFF0",
   boxShadow: "5px 0.5px 4px 0px #a5a5a5",
   // backdropFilter: blur(0),
   // document.getElementById("#navbar-content h1").color="white",
   scrollTrigger: {
-    trigger: "#page1 #navbar",
+    trigger: "#navbar",
     scroller: "body",
-    start: "top -100%",
-    end: "max",
-    // markers: true,
+    start: 130,
+    end: "top -100%",
+    markers: true,
     scrub: true,
   },
 });
 
-gsap.to("#page1 #navbar #navbar-content h4", {
+gsap.to("#page1 #navbar #navbar-content a", {
   color: "black",
   scrollTrigger: {
-    trigger: "#page1 #navbar #navbar-content h4",
+    trigger: "#page1 #navbar #navbar-content a",
     scroller: "body",
-    start: "top -100%",
-    end: "max",
+    start: 30,
+    end: "top -100%",
     scrub: true,
+    // markers: true,
   },
 });
 
 navContent.forEach((el) => {
-  // console.log(el);
   el.addEventListener("mouseenter", function (dets) {
     var component = document.querySelector(`#${dets.target.id} h4`);
     t2 = gsap.timeline();
@@ -77,7 +76,7 @@ navContent.forEach((el) => {
     });
   });
 });
-function logo_tansition() {
+function logo_transition() {
   var t = gsap.timeline();
   var logo = document.querySelector("#navbar img");
   t.to(logo, {
@@ -92,12 +91,11 @@ function logo_tansition() {
     t.reverse();
   });
 }
-logo_tansition();
+logo_transition();
 
 function splitTextAnimation() {
   var t = gsap.timeline();
   var npgc = document.querySelector("#content h1").textContent.split("");
-  // console.log(npgc);
   var content = "";
   npgc.forEach((e, i) => {
     content += `<span id="collegeName_${i}">${e}</span>`;
@@ -112,8 +110,6 @@ function splitTextAnimation() {
       });
     });
     el.addEventListener("mouseleave", (dets) => {
-      console.log("leave");
-      console.log(dets.target);
       gsap.to(dets.target, {
         scale: 1,
         y: 0,
@@ -125,17 +121,17 @@ function splitTextAnimation() {
 splitTextAnimation();
 
 var joinNowButton = document.querySelector("#cta section a ");
-console.log(joinNowButton);
 joinNowButton.addEventListener("click", () => {
-  console.log("clicked");
   gsap.to("#googleform", {
     scale: 1,
+    x: 0,
   });
 });
 var formclose = document.querySelector("#googleform");
 formclose.addEventListener("click", () => {
   gsap.to("#googleform", {
     scale: 0,
+    x: "-100%",
   });
 });
 // navContent.addEventListener("mouseleave", () => {});
