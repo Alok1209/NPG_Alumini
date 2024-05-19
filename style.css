@@ -148,7 +148,7 @@ body {
   /* box-shadow: 5px 0.5px 8px 2px #a5a5a5; */
 }
 
-.nav-btn{
+.nav-btn {
   display: none;
 }
 
@@ -455,66 +455,87 @@ body {
   transition-duration: 0.3s;
   box-shadow: 3px 3px 8px 1px rgb(0, 0, 0, 0.3);
 }
+
 .gallery_div0 {
   background-image: url(Gallery/IMG_8155.JPG);
 }
+
 .gallery_div1 {
   background-image: url(Gallery/IMG_8110.JPG);
 }
+
 .gallery_div2 {
   background-image: url(Gallery/IMG_8075.JPG);
 }
+
 .gallery_div3 {
   background-image: url(Gallery/IMG_20240323_121453.jpg);
 }
+
 .gallery_div4 {
   background-image: url(Gallery/IMG_20240323_104735.jpg);
 }
+
 .gallery_div5 {
   background-image: url(Gallery/IMG_20240323_102600.jpg);
 }
+
 .gallery_div6 {
   background-image: url(Gallery/IMG20240323135306.jpg);
 }
+
 .gallery_div7 {
   background-image: url(Gallery/IMG20240323121506.jpg);
 }
+
 .gallery_div8 {
   background-image: url(Gallery/IMG20240323120700.jpg);
 }
+
 .gallery_div9 {
   background-image: url(Gallery/IMG20240323125023.jpg);
 }
+
 .gallery_div10 {
   background-image: url(Gallery/img1.jpg);
 }
+
 .gallery_div11 {
   background-image: url(Gallery/img2.jpg);
 }
+
 .gallery_div12 {
   background-image: url(Gallery/img3.jpg);
 }
+
 .gallery_div13 {
   background-image: url(Gallery/img4.jpg);
 }
+
 .gallery_div14 {
   background-image: url(Gallery/img5.jpg);
 }
+
 .gallery_div15 {
   background-image: url(Gallery/img6.jpg);
 }
+
 .gallery_div16 {
   background-image: url(Gallery/img7.jpg);
 }
+
 .gallery_div17 {
   background-image: url(Gallery/img8.jpg);
 }
+
 .gallery_div18 {
   background-image: url(Gallery/img9.jpg);
 }
+
 .gallery_div19 {
   background-image: url(Gallery/img10.jpg);
 }
+
 #page_CTA {
   width: 100%;
   height: 100%;
@@ -811,18 +832,143 @@ body {
   background-image: url(holi_of_flowers1.jpg);
 }
 
+.testi_topalum {
+  width: 70vw;
+  height: 105vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  h1 {
+    text-align: center;
+  }
+
+  .tt_container {
+    width: 100%;
+    height: 42%;
+    /* padding: 1rem; */
+    display: flex;
+    gap: 2rem;
+
+    .tt_card {
+      width: 50%;
+      height: 100%;
+      padding: 1rem;
+      box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.247);
+      border-radius: 1rem;
+
+      
+    }
+    .testi-qoute{
+      width: 3rem;
+    }
+    .ttc1, .ttc2{
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      
+      p{
+        font-size: .9rem;
+      }
+      .testi_name{
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.top_alum_card{
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 2rem;
+  
+}
+.ttcd1{
+  width: 50rem;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1024px) {
   .card-body-container p:nth-child(2) {
     font-size: 0.8rem;
     line-height: 1.3rem;
   }
 
-  .marque-content{
+  .marque-content {
     /* height: 10em; */
     width: 26em !important;
-    li{
+
+    li {
       width: 3.5em !important;
     }
+  }
+
+  .testi_topalum {
+    width: 70vw;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  
+    h1 {
+      text-align: center;
+    }
+  
+    .tt_container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      
+      .tt_card {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.247);
+        border-radius: 1rem;
+        
+        .ttcd1{
+          width: 100%;
+          height: 10rem;
+          border: 1px solid black;
+          border-radius: 1rem;
+        }
+      }
+      .testi-qoute{
+        width: 3rem;
+      }
+      .ttc1, .ttc2{
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-around;
+        
+        p{
+          font-size: .9rem;
+        }
+        .testi_name{
+          font-size: 1.2rem;
+          font-weight: 600;
+          text-align: right;
+        }
+      }
+    }
+    
   }
 }
 
@@ -904,9 +1050,11 @@ body {
   .marque {
     height: auto;
   }
-  .marque-content{
+
+  .marque-content {
     height: 20em;
     width: 17em;
+
     li {
       margin-left: 0.5em;
     }
@@ -915,6 +1063,7 @@ body {
   #cta {
     width: 100% !important;
     text-wrap: wrap;
+
     section h4 {
       text-wrap: wrap;
     }
@@ -924,10 +1073,12 @@ body {
     flex-direction: column;
     height: auto;
   }
+
   #footer-content {
     flex-direction: column;
     height: 100%;
   }
+
   #contact p {
     line-height: 2rem;
   }
@@ -935,6 +1086,7 @@ body {
   .footer-top {
     flex-direction: column;
     height: auto;
+
     div {
       width: 100%;
     }
@@ -1018,6 +1170,7 @@ body {
   .marque-content {
     height: 10em;
     width: 24em !important;
+
     li {
       width: 2em !important;
     }
@@ -1027,17 +1180,19 @@ body {
     width: 100% !important;
     height: auto;
     text-wrap: wrap;
+
     section h4 {
       text-wrap: wrap;
     }
   }
+
   #googleform,
   #googleform iframe {
     height: 100vh;
     width: 100vw;
   }
 
-  #navbar-content{
+  #navbar-content {
     width: 100vw !important;
     height: 50vh;
     top: -60vh;
@@ -1048,9 +1203,10 @@ body {
     transition-duration: .3s;
   }
 
-  #navbar{
+  #navbar {
     justify-content: space-between;
-    .nav-btn{
+
+    .nav-btn {
       display: block;
       color: white;
       font-size: 2rem;
@@ -1058,20 +1214,31 @@ body {
       border-radius: 1rem;
       z-index: 12;
     }
-    .nav-btn:active{
+
+    .nav-btn:active {
       background-color: #2968605c;
+    }
+  }
+
+  #top_alumni{
+    .tt_card{
+      display: flex !important;
+      flex-direction: column !important;
+      p{
+        font-size: .8rem;
+      }
     }
   }
 }
 
 @media screen and (max-width: 400px) {
-  #page2-part1{
-    .img2{
+  #page2-part1 {
+    .img2 {
       width: 300px;
       height: 210px;
     }
   }
-  
+
   #page3 {
     flex-direction: column-reverse;
     margin-top: 30rem;
@@ -1099,7 +1266,7 @@ body {
     }
   }
 
-  .card-body{
+  .card-body {
     padding: 1rem;
     border-radius: 1.5rem;
   }
@@ -1134,11 +1301,13 @@ body {
       }
     }
   }
-  #cta{
+
+  #cta {
     width: 100% !important;
     height: auto;
     text-wrap: wrap;
-    section h4{
+
+    section h4 {
       text-wrap: wrap;
       font-size: 3rem;
     }
