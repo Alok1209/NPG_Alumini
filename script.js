@@ -42,9 +42,9 @@ gsap.to("#page1 #navbar", {
   scrollTrigger: {
     trigger: "#page1 #navbar",
     scroller: "body",
-    start: "top -100%",
-    end: "max",
-    // markers: true,
+    start: 10,
+    end: "top -100%",
+    markers: true,
     scrub: true,
   },
 });
@@ -54,8 +54,8 @@ gsap.to("#page1 #navbar #navbar-content h4", {
   scrollTrigger: {
     trigger: "#page1 #navbar #navbar-content h4",
     scroller: "body",
-    start: "top -100%",
-    end: "max",
+    start: 10,
+    end: "top -100%",
     scrub: true,
   },
 });
