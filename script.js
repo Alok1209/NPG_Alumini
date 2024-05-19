@@ -70,6 +70,18 @@ gsap.to("#page1 #navbar #navbar-content a", {
   },
 });
 
+gsap.to("#nav-btn-icon", {
+  color: "black",
+  scrollTrigger: {
+    trigger: "#nav-btn-icon",
+    scroller: "body",
+    start: 30,
+    end: "top -100%",
+    scrub: true,
+    // markers: true,
+  },
+});
+
 navContent.forEach((el) => {
   el.addEventListener("mouseenter", function (dets) {
     var component = document.querySelector(`#${dets.target.id} h4`);
@@ -146,3 +158,19 @@ formclose.addEventListener("click", () => {
   });
 });
 // navContent.addEventListener("mouseleave", () => {});
+var navBtn = document.querySelector(".nav-btn");
+
+navBtn.addEventListener("click", () => {
+  
+  if(document.querySelector("#nav-btn-icon").classList.contains("ri-close-line")){
+    document.querySelector("#nav-btn-icon").classList.remove("ri-close-line");
+    document.querySelector("#nav-btn-icon").classList.add("ri-menu-3-line");
+    document.querySelector("#navbar-content").style.top = "-60vh";
+  }
+  else if(document.querySelector("#nav-btn-icon").classList.contains("ri-menu-3-line")){
+    document.querySelector("#nav-btn-icon").classList.remove("ri-menu-3-line");
+    document.querySelector("#nav-btn-icon").classList.add("ri-close-line");
+
+    document.querySelector("#navbar-content").style.top = "0";
+  }
+});
